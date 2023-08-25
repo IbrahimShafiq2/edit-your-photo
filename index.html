@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container disable">
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="title">Edit Your Photo</label>
+                    <div class="options">
+                        <button id="brightness" class="active">Brightness</button>
+                        <button id="saturation">Saturaion</button>
+                        <button id="inversion">Inversion</button>
+                        <button id="grayScale">GrayScale</button>
+                        <button id="sebia">Sebia</button>
+                        <button id="opacity">Opacity</button>
+                        <button id="contrast">Contrast</button>
+                        <button id="blur">Blur</button>
+                        <div class="controlingTheHeightWidth">
+                            <div class="widthHeight">
+                                <div class="widthBox inputBox">
+                                    <input type="number" />
+                                    <span class="span">Width</span>
+                                </div>
+                                <div class="heightBox inputBox">
+                                    <input type="number" />
+                                    <span class="span">Height</span>
+                                </div>
+                            </div>
+                            <div class="checboxDiv">
+                                <div class="rationBox ratio">
+                                    <label class="checkLabel">
+                                        <input type="checkbox" class="checkbox" id="ratio" checked> 
+                                        <span class="checkbox"></span>
+                                    </label>
+                                    <label for="ratio">Lock aspect ratio</label>
+                                </div>
+                                <div class="qualityBox quality">
+                                    <label class="checkLabel">
+                                        <input type="checkbox" class="checkbox" id="quality"> 
+                                        <span class="checkbox"></span>
+                                    </label>
+                                    <label for="quality">Reduce Quality</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="filter-info">
+                            <p class="name">Brightness</p>
+                            <p class="value">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                    </div>
+                </div>
+                <div class="rotate">
+                    <label class="title">Rotate & Flip</label>
+                    <div class="options">
+                        <button id="left">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </button>
+                        <button id="right">
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </button>
+                        <button id="vertical">
+                            <i class="bx bx-reflect-vertical"></i>
+                        </button>
+                        <button id="horizontal">
+                            <i class="bx bx-reflect-horizontal"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-img">
+                <img src="./assets/images/download.jpeg" alt="preview-img">
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-filter">Reset Filtres</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">Choose Image</button>
+                <button class="save-img">Save Image</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
